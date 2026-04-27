@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_student_record_form_hide_age" model="ir.ui.view">
+        <field name="name">student.record.form.hide.age</field>
+        <field name="model">student.record</field>
+        <field name="inherit_id" ref="school_mgmt.view_student_record_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='age']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

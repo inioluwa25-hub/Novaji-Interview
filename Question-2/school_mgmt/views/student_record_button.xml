@@ -1,0 +1,19 @@
+<odoo>
+    <record id="view_student_record_form_with_deactivate_button" model="ir.ui.view">
+        <field name="name">student.record.form.deactivate.button</field>
+        <field name="model">student.record</field>
+        <field name="inherit_id" ref="school_mgmt.view_student_record_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <header>
+                    <button
+                        name="action_deactivate_student"
+                        string="Deactivate Student"
+                        type="object"
+                        class="btn-primary"
+                    />
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>
